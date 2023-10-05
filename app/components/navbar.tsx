@@ -1,4 +1,4 @@
-"use-client";
+
 
 import { SignInButton, UserButton, auth } from "@clerk/nextjs";
 
@@ -17,7 +17,7 @@ const NavBar = () => {
         <div>
           {!userId && (
             <div>
-              <button className="mr-4 py-1.5 px-4 rounded-md text-sm bg-violet-700 hover:bg-violet-700/75  ">
+              <button className="mr-4 py-1.5 px-4 rounded-md text-sm bg-white/25 hover:bg-violet-700/75  ">
                 <SignInButton>Sign In</SignInButton>
               </button>
             </div>

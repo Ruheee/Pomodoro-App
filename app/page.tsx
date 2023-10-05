@@ -1,11 +1,12 @@
 
 import NavBar from "@/app/components/navbar"
+import Counter from "@/app/components/counter";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-red-500 px-[600px] box-border m-0 p-0">
+    <main className="min-h-screen bg-[#BA4949] px-[600px] box-border m-0 p-0">
       <NavBar />
-      <p>Hello</p>
+      <Counter />
     </main>
   );
 }
