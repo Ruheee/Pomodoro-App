@@ -22,7 +22,7 @@ const Player = () => {
     fetch("https://accounts.spotify.com/api/token", authParamaters)
       .then((response) => response.json())
       .then((data) => setAccessToken(data.access_token));
-  }, []);
+  }, []);  
 
   return <div></div>;
 };
