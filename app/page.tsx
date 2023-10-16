@@ -12,7 +12,7 @@ export default function Home() {
     <main className="min-h-screen bg-[#BA4949] px-[600px] box-border m-0 p-0">
       <NavBar />
       <Counter />
-      <Player />
+      <Player />  
     </main>
   );
 }
