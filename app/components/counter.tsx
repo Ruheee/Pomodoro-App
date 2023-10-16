@@ -1,17 +1,17 @@
-"use client";
-
 import { useEffect, useState } from "react";
 
 const Counter = () => {
-  const [selectedOption, setSelectedOption] = useState("Pomodoro");
-  const [time, setTime] = useState(25 * 60); // Initial time in seconds (25 minutes)
-  const [isActive, setIsActive] = useState(false);
-
-  const options = {
-    Pomodoro: 25 * 60,
+  const initialOptions = {
+    "Pomodoro": 25 * 60,
     "Short Break": 5 * 60,
     "Long Break": 15 * 60,
   };
+
+  const [selectedOption, setSelectedOption] = useState("Pomodoro");
+  const [options, setOptions] = useState({ ...initialOptions });
+  const [isActive, setIsActive] = useState(false);
+
+  const [time, setTime] = useState(options[selectedOption]); // Initial time based on the selected option
 
   useEffect(() => {
     let interval;
@@ -90,4 +90,3 @@ const Counter = () => {
 };
 
 export default Counter;
-
